@@ -1,7 +1,8 @@
-// pr-feedback fixture (ticket #373): a planted fake AWS-format key — the
-// canonical AWS DOCUMENTATION example key (not a real credential), the same
-// class the #371 flaw commit planted. This file exists so the wardgen PR
-// feedback round-trip has a secret to find on an ADDED line.
-const accessKeyId = 'AKIAIOSFODNN7EXAMPLE'
-const secretAccessKey = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+// pr-feedback fixture (ticket #373): planted fake key material, generated for
+// this fixture and owned by no account — in the real AWS format so gitleaks'
+// aws-access-token rule matches it on the ADDED line (the docs example pair
+// is allowlisted by gitleaks, so the fixture generates its own, same as the
+// #371 flaw commit).
+const accessKeyId = 'AKIAQ2X6R9TMPL4KZ8EF'
+const secretAccessKey = 'mJ8sV2wX7bN4cQ1lF6tY0hD5rK9pG3zE8uA2oI5sW'
 module.exports = { accessKeyId, secretAccessKey }
