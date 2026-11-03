@@ -1,0 +1,10 @@
+{
+  "name": "fixture-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "wardgen repo-tier scan fixture (clean baseline)",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "express": "^4.19.2"
+  }
+}
